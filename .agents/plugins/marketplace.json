@@ -1,0 +1,20 @@
+{
+  "name": "izzi-to-work-marketplace",
+  "interface": {
+    "displayName": "Izzi to Work"
+  },
+  "plugins": [
+    {
+      "name": "izzi-to-work",
+      "source": {
+        "source": "url",
+        "url": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

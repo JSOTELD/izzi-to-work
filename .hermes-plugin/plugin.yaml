@@ -1,0 +1,6 @@
+name: izzi-to-work
+version: 1.0.0
+description: Izzi to Work skills and workflow bootstrap for Hermes Agent
+author: JSOTELD
+provides_hooks:
+  - pre_llm_call

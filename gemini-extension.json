@@ -1,0 +1,6 @@
+{
+  "name": "izzi-to-work",
+  "description": "Agentic engineering skills library: zero-loss context compaction, surgical mutation testing, financial & OWASP guards, blind-voting ADRs, and lean E2E workflows",
+  "version": "1.0.0",
+  "contextFileName": "GEMINI.md"
+}

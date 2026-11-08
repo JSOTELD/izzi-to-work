@@ -1,0 +1,45 @@
+{
+  "name": "izzi-to-work",
+  "version": "1.0.0",
+  "description": "Izzi-to-Work: Multi-harness agentic skills & engineering discipline framework (context persistence, surgical mutation testing, financial & security guards, multi-agent governance, and lean E2E workflows)",
+  "type": "module",
+  "main": ".opencode/plugins/izzi-to-work.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JSOTELD/izzi-to-work.git"
+  },
+  "homepage": "https://github.com/JSOTELD/izzi-to-work",
+  "author": {
+    "name": "JSOTELD",
+    "email": "j.soteld@gmail.com",
+    "url": "https://github.com/JSOTELD"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "bash tests/run-all.sh",
+    "version:check": "bash scripts/bump-version.sh --check",
+    "version:audit": "bash scripts/bump-version.sh --audit"
+  },
+  "keywords": [
+    "pi-package",
+    "skills",
+    "claude-code",
+    "antigravity",
+    "codex",
+    "cursor",
+    "context-management",
+    "mutation-testing",
+    "security",
+    "fintech",
+    "playwright",
+    "workflow"
+  ],
+  "pi": {
+    "extensions": [
+      "./.pi/extensions/izzi-to-work.ts"
+    ],
+    "skills": [
+      "./skills"
+    ]
+  }
+}

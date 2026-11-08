@@ -1,0 +1,36 @@
+{
+  "name": "izzi-to-work",
+  "version": "1.0.0",
+  "description": "Agentic engineering discipline: context persistence, mutation testing, financial guards, blind-voting ADRs, and lean workflows.",
+  "author": {
+    "name": "JSOTELD",
+    "email": "j.soteld@gmail.com"
+  },
+  "homepage": "https://github.com/JSOTELD/izzi-to-work",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "context-persistence",
+    "mutation-testing",
+    "architecture",
+    "multi-agent",
+    "workflows"
+  ],
+  "skills": "./skills/",
+  "sessionStart": {
+    "skill": "using-izzi-to-work"
+  },
+  "skillInstructions": "Kimi Code tool mapping for Izzi to Work skills:\n\n- When an Izzi to Work skill says to ask the user, ask clarifying questions, ask one question at a time, present multiple-choice options, use the terminal for a question, or wait for the user's choice, call Kimi Code's `AskUserQuestion` tool.\n- For `AskUserQuestion`, provide 1 question with 2-4 concrete options when possible. Put the recommended option first and suffix its label with `(Recommended)`.\n- When an Izzi to Work skill refers to `TodoWrite`, use Kimi Code's `TodoList` tool.\n- When an Izzi to Work skill says `Task tool (general-purpose)` or asks you to dispatch an implementer/reviewer subagent, use Kimi Code's `Agent` tool with a Kimi subagent type.\n- For implementation, code review, spec review, quality review, and filled subagent prompt templates, call `Agent` with `subagent_type: \"coder\"`.\n- For read-only codebase exploration that would take several searches, use `Agent` with `subagent_type: \"explore\"`.\n- For read-only planning or architecture design, use `Agent` with `subagent_type: \"plan\"`.\n- When an Izzi to Work skill refers to the `Skill` tool, use Kimi Code's native `Skill` tool.\n- Use Kimi Code's `Read`, `Write`, `Edit`, `Bash`, `Grep`, `Glob`, `FetchURL`, `WebSearch`, and MCP tools by their actual exposed names.",
+  "interface": {
+    "displayName": "Izzi to Work",
+    "shortDescription": "Agentic engineering discipline and multi-harness skills suite",
+    "longDescription": "Izzi to Work equips AI agents with rigorous context persistence, surgical mutation testing, financial guards, blind-voting ADRs, and lean E2E workflows.",
+    "developerName": "JSOTELD",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/JSOTELD/izzi-to-work"
+  }
+}

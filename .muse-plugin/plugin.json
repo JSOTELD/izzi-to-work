@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "name": "izzi-to-work",
+  "displayName": "Izzi to Work",
+  "version": "1.0.0",
+  "description": "Agentic engineering discipline: context persistence, mutation testing, financial guards, blind-voting ADRs, and lean workflows.",
+  "compat": {
+    "source": "native",
+    "manifestDir": ".muse-plugin"
+  },
+  "capabilities": {
+    "skills": [
+      { "id": "using-izzi-to-work", "path": "skills/using-izzi-to-work/SKILL.md" },
+      { "id": "context-checkpoint", "path": "skills/context-checkpoint/SKILL.md" },
+      { "id": "auto-compact-dustpan", "path": "skills/auto-compact-dustpan/SKILL.md" },
+      { "id": "token-budget-guard", "path": "skills/token-budget-guard/SKILL.md" },
+      { "id": "mutation-testing", "path": "skills/mutation-testing/SKILL.md" },
+      { "id": "lean-playwright-e2e", "path": "skills/lean-playwright-e2e/SKILL.md" },
+      { "id": "postgres-live-testing", "path": "skills/postgres-live-testing/SKILL.md" },
+      { "id": "zero-downtime-migrations", "path": "skills/zero-downtime-migrations/SKILL.md" },
+      { "id": "ci-failure-triage", "path": "skills/ci-failure-triage/SKILL.md" },
+      { "id": "git-rebase-conflict-resolver", "path": "skills/git-rebase-conflict-resolver/SKILL.md" },
+      { "id": "financial-integrity", "path": "skills/financial-integrity/SKILL.md" },
+      { "id": "admin-console-patterns", "path": "skills/admin-console-patterns/SKILL.md" },
+      { "id": "idempotent-transactions", "path": "skills/idempotent-transactions/SKILL.md" },
+      { "id": "spec-driven-architecture", "path": "skills/spec-driven-architecture/SKILL.md" },
+      { "id": "owasp-security-audit", "path": "skills/owasp-security-audit/SKILL.md" },
+      { "id": "secret-leak-sentinel", "path": "skills/secret-leak-sentinel/SKILL.md" },
+      { "id": "privacy-compliance", "path": "skills/privacy-compliance/SKILL.md" },
+      { "id": "api-contract-and-error-resilience", "path": "skills/api-contract-and-error-resilience/SKILL.md" },
+      { "id": "anti-slop-pruner", "path": "skills/anti-slop-pruner/SKILL.md" },
+      { "id": "editorial-luxury-design", "path": "skills/editorial-luxury-design/SKILL.md" },
+      { "id": "ux-heuristic-audit", "path": "skills/ux-heuristic-audit/SKILL.md" },
+      { "id": "responsive-pixel-police", "path": "skills/responsive-pixel-police/SKILL.md" },
+      { "id": "dependency-diet", "path": "skills/dependency-diet/SKILL.md" },
+      { "id": "blind-voting-board", "path": "skills/blind-voting-board/SKILL.md" },
+      { "id": "zero-trust-squad", "path": "skills/zero-trust-squad/SKILL.md" }
+    ],
+    "commands": [],
+    "hooks": [
+      {
+        "id": "session-start",
+        "event": "SessionStart",
+        "command": [
+          "sh",
+          "hooks/session-start"
+        ],
+        "timeoutMs": 5000
+      }
+    ],
+    "mcpServers": [],
+    "reminders": []
+  }
+}

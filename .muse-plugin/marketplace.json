@@ -1,0 +1,20 @@
+{
+  "name": "izzi-to-work-marketplace",
+  "description": "Marketplace catalog for izzi-to-work agentic skills framework",
+  "owner": {
+    "name": "JSOTELD",
+    "email": "j.soteld@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "izzi-to-work",
+      "description": "Agentic engineering discipline: context persistence, mutation testing, financial guards, blind-voting ADRs, and lean workflows.",
+      "version": "1.0.0",
+      "source": "./",
+      "author": {
+        "name": "JSOTELD",
+        "email": "j.soteld@gmail.com"
+      }
+    }
+  ]
+}

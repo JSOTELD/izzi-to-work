@@ -1,0 +1,27 @@
+{
+  "name": "izzi-to-work",
+  "displayName": "Izzi to Work",
+  "version": "1.0.0",
+  "description": "Agentic engineering discipline: context persistence, mutation testing, financial guards, blind-voting ADRs, and lean workflows.",
+  "logo": "assets/antigravity-logo.png",
+  "suggestedPrompts": [
+    "Design a spec-driven architecture blueprint",
+    "Save a context checkpoint before clearing",
+    "Run surgical mutation verification on this diff"
+  ],
+  "keywords": [
+    "skills",
+    "context-persistence",
+    "mutation-testing",
+    "architecture",
+    "multi-agent",
+    "workflows"
+  ],
+  "author": {
+    "name": "JSOTELD",
+    "email": "j.soteld@gmail.com"
+  },
+  "homepage": "https://github.com/JSOTELD/izzi-to-work",
+  "repository": "https://github.com/JSOTELD/izzi-to-work",
+  "license": "MIT"
+}

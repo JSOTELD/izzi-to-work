@@ -1,0 +1,63 @@
+#!/usr/bin/env bash
+# SessionStart hook for izzi-to-work plugin
+
+set -euo pipefail
+
+case "$0" in
+  */*|*\\*) SCRIPT_DIR="$(cd "${0%[/\\]*}" && pwd)" ;;
+  *) SCRIPT_DIR="$(pwd)" ;;
+esac
+PLUGIN_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+
+# Read using-izzi-to-work skill content
+skill_md="${PLUGIN_ROOT}/skills/using-izzi-to-work/SKILL.md"
+if [ -r "$skill_md" ]; then
+  using_izzi_content="$(<"$skill_md")"
+else
+  using_izzi_content="Error reading using-izzi-to-work skill"
+fi
+
+# Check for existing active task checkpoint (.claude/checkpoint.md)
+checkpoint_md="${PWD}/.claude/checkpoint.md"
+checkpoint_section=""
+if [ -r "$checkpoint_md" ]; then
+  checkpoint_raw="$(head -n 45 "$checkpoint_md" 2>/dev/null || cat "$checkpoint_md")"
+  if [ -n "$checkpoint_raw" ]; then
+    checkpoint_section=$'\n\n'"**RESTORING ACTIVE CHECKPOINT (.claude/checkpoint.md):**"$'\n'"$checkpoint_raw"
+  fi
+fi
+
+escape_for_json() {
+    local s="$1"
+    s="${s//\\/\\\\}"
+    s="${s//\"/\\\"}"
+    s="${s//$'\n'/\\n}"
+    s="${s//$'\r'/\\r}"
+    s="${s//$'\t'/\\t}"
+    printf '%s' "$s"
+}
+
+using_izzi_escaped=$(escape_for_json "$using_izzi_content")
+checkpoint_escaped=$(escape_for_json "$checkpoint_section")
+
+session_context="<EXTREMELY_IMPORTANT>\nYou have izzi-to-work.\n\n**Below is the full content of your 'izzi-to-work:using-izzi-to-work' skill - your introduction to using skills. For all other skills, use the 'Skill' tool:**\n\n${using_izzi_escaped}${checkpoint_escaped}\n</EXTREMELY_IMPORTANT>"
+
+emit_json() {
+  if command -v cat >/dev/null 2>&1; then
+    printf "$@" | cat
+  else
+    printf "$@"
+  fi
+}
+
+if [ -n "${CURSOR_PLUGIN_ROOT:-}" ]; then
+  emit_json '{\n  "additional_context": "%s"\n}\n' "$session_context"
+elif [ -n "${CLAUDE_PLUGIN_ROOT:-}" ] && [ -z "${COPILOT_CLI:-}" ] && [ -z "${MUSE_PLUGIN_ROOT:-}" ]; then
+  emit_json '{\n  "hookSpecificOutput": {\n    "hookEventName": "SessionStart",\n    "additionalContext": "%s"\n  }\n}\n' "$session_context"
+elif [ -n "${MUSE_PLUGIN_ROOT:-}" ]; then
+  emit_json '{\n  "hookSpecificOutput": {\n    "hookEventName": "SessionStart",\n    "additionalContext": "%s"\n  }\n}\n' "$session_context"
+else
+  emit_json '{\n  "additionalContext": "%s"\n}\n' "$session_context"
+fi
+
+exit 0
