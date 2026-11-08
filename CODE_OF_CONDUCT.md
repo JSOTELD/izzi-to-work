@@ -40,3 +40,4 @@ Community leaders will follow these Community Impact Guidelines in determining t
 ## Contact
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project maintainer at `j.soteld@gmail.com`.
+

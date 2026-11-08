@@ -38,3 +38,4 @@ Every view, component, and data table **MUST** implement and verify all four sta
 2. **Empty State:** Friendly illustration/icon, clear message ("No invoices yet"), and a primary action button ("Create Your First Invoice").
 3. **Error State:** Human-readable explanation and an instant retry button ("Try Again").
 4. **Data / Success State:** Clean data presentation with tabular numbers and responsive wrapping.
+

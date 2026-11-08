@@ -46,3 +46,4 @@ Document findings in `docs/security/audit-<YYYY-MM-DD>.md` using this format:
 - **Taint Path:** `req.params.id` passed directly to `db.findInvoice(id)` without verifying `invoice.tenant_id === req.user.tenant_id`.
 - **Remediation:** Scope the database query to the authenticated tenant and return `404 Not Found` if missing.
 ```
+

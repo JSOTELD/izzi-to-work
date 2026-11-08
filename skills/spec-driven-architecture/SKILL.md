@@ -38,3 +38,4 @@ Before writing implementation code:
 9. **Edge Cases & Failure Modes:** Network outages, duplicate submissions, partial transactions, timezones, leap years, and currency precision.
 10. **Phased Implementation Plan:** Step-by-step milestones with affected files, acceptance tests, and verification commands.
 11. **Open Questions & Risk Assessment:** Unresolved technical trade-offs and rollback strategy.
+

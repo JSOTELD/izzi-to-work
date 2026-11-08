@@ -17,3 +17,4 @@ Antigravity uses task artifacts rather than todo tool calls:
 - Write the initial checklist using `write_to_file` with `ArtifactMetadata` containing `ArtifactType: "task"`.
 - As each step completes, update with `replace_file_content` to toggle `- [ ]` to `- [x]`.
 - For background agent tasks, dispatch via `invoke_subagent` using `self` or `research`.
+

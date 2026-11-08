@@ -8,3 +8,4 @@
 | Edit file | `replace_file_content` |
 | Run shell command | `execute_bash` |
 | Search code | `grep_search`, `find_files` |
+

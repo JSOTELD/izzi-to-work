@@ -58,3 +58,4 @@ export function verifyWebhookSignature(
 Every payment, webhook, or balance-altering handler **MUST** include an automated integration test verifying concurrent execution:
 - Dispatch two identical requests in parallel with the same idempotency key using `Promise.all([charge(key), charge(key)])`.
 - **Assertion:** Exactly **one** ledger entry is created, and both requests resolve cleanly with identical output.
+

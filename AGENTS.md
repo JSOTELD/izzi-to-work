@@ -39,3 +39,4 @@ Every pull request description must disclose:
 - The host harness used (Antigravity, Claude Code, Cursor, Codex, OpenCode, Hermes, etc.)
 - The model employed (Claude 3.7/3.5, Gemini 2.5/3.8, GPT-4o, etc.)
 - Specific commands used to verify the changes locally.
+

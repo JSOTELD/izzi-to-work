@@ -117,3 +117,4 @@ function firstNonCompactionSummaryIndex(messages: unknown[]): number {
 	}
 	return index;
 }
+

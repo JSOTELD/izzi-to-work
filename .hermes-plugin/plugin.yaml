@@ -4,3 +4,4 @@ description: Izzi to Work skills and workflow bootstrap for Hermes Agent
 author: JSOTELD
 provides_hooks:
   - pre_llm_call
+

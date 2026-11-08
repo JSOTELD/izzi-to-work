@@ -198,3 +198,4 @@ if [[ "$FAILURES" -gt 0 ]]; then
 fi
 
 echo "STATUS: PASSED"
+

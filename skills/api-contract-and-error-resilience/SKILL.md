@@ -52,3 +52,4 @@ Callers are compelled by the TypeScript compiler to branch on `result.ok` before
 | `409 Conflict` | State Collisions | Idempotency collision, duplicate unique key |
 | `422 Unprocessable` | Domain Rule Violation | Valid syntax but invalid business state |
 | `500 Server Error` | Unexpected Crash | Unhandled defect in system infrastructure |
+

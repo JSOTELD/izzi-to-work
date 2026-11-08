@@ -18,3 +18,4 @@ Welcome to the initial production release of **Izzi to Work** (`v1.0.0`), a mult
   5. **Multi-Agent Governance:** `blind-voting-board`, `zero-trust-squad`.
 - **Automated Verification Suite:**
   End-to-end manifest validation, skill byte size checks (`< 20,000 bytes`), 12-manifest version synchronization (`bump-version.sh`), and platform tool mappings.
+

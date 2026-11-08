@@ -87,3 +87,4 @@ if grep -q 'server.js' "$TEST_ROOT/audit-boundaries.out"; then
 fi
 
 echo "PASS: Version-bump tests passed"
+

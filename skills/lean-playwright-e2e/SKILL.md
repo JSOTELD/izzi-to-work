@@ -52,3 +52,4 @@ Save evidence screenshots to `scratchpad/evidence/<module>/<screen>-360.png` and
 - **Desktop Capture (1280x720):** `scratchpad/evidence/checkout/summary-1280.png`
 - **WCAG Verification:** Zero horizontal scroll at 360px, visible focus states verified on all interactable elements.
 ```
+

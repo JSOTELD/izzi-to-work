@@ -9,3 +9,4 @@
 | Edit file | `Edit` |
 | Run shell command | `Bash` |
 | Search code | `Grep`, `Glob` |
+

@@ -47,3 +47,4 @@ Before staging resolved files, run a fail-fast regex check:
 git diff --check
 git grep -n -E "^<{7}|^={7}|^>{7}" || echo "Clean: No conflict markers found."
 ```
+

@@ -45,3 +45,4 @@ esac
 SCRIPT_NAME="$1"
 shift
 exec "${BASH:-bash}" "${SCRIPT_DIR}/${SCRIPT_NAME}" "$@"
+

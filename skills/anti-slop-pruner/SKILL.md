@@ -44,3 +44,4 @@ description: "Pruning AI-generated code bloat: removing decorative, redundant co
 git diff origin/main...HEAD | grep -E "^\+\s*//\s*(Set|Get|Initialize|Create|Return|Update)" \
   && echo "Notice: Review staged comments for redundant AI restatements." || echo "Clean: No obvious comment slop."
 ```
+

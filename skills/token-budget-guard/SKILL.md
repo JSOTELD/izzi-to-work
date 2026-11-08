@@ -46,3 +46,4 @@ Before issuing a file read tool call:
 - If line count exceeds 300 lines, use targeted grep (`grep -n "symbolName" path/to/file.ts`) to locate the line number, followed by targeted reading:
   - `StartLine = match_line - 10`
   - `EndLine = match_line + 40`
+

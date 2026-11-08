@@ -40,3 +40,4 @@ The `verifier` role must execute in this exact sequence:
 2. **Rule Enforcement:** Ensure no floating-point arithmetic for money, proper RLS enforcement, semantic HTTP status codes (404 instead of 403), and no empty catch blocks.
 3. **Mutation Proof:** Introduce a surgical mutation to confirm the test suite fails red.
 4. **Clean Handoff:** Issue either **APPROVED** or **CHANGES_REQUESTED** with actionable remediation code snippets.
+

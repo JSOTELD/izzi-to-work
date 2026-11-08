@@ -56,3 +56,4 @@ sequenceDiagram
 2. **Round 1 (Blind):** Each seat submits `vote-<seat>.md` (max 25 lines) without seeing other votes. Format: Option · 3 Reasons · 2 Risks · Condition to change vote · Confidence (1–5).
 3. **Round 2 (Rebuttal):** The Chair shares a concise 15-line summary of all votes. Only minority seats may submit a brief rebuttal (max 10 lines).
 4. **Formal ADR Generation:** The Chair compiles `docs/adr/ADR-00X-<topic>.md` documenting the decision, consensus, dissenting rationales, reversibility plan, and owner sign-off requirement.
+

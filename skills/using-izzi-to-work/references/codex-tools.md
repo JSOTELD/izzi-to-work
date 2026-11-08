@@ -8,3 +8,4 @@
 | Execute command | `bash` |
 | Search code | `grep`, `glob` |
 | Subagents | Harness subagent dispatcher |
+

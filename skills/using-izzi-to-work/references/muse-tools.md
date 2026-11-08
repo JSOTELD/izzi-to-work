@@ -7,3 +7,4 @@
 | Write file | `write` |
 | Edit file | `edit` |
 | Run command | `bash` |
+

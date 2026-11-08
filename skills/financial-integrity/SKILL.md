@@ -35,3 +35,4 @@ description: "Strict monetary engineering rules: absolute ban on floating-point 
 ### Rule 5: Immutable Financial Ledgers
 - Financial balances must never be mutated via arbitrary `UPDATE balance = balance + X` without an immutable ledger entry.
 - Every balance mutation must have a corresponding signed transaction record with an idempotency key.
+

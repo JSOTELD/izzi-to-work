@@ -1,4 +1,4 @@
-﻿param(
+param(
     [ValidateSet("Stop", "PreCompact", "PostCompact")]
     [string]$Mode = "Stop"
 )
@@ -75,3 +75,4 @@ if ($Mode -eq "PostCompact") {
 }
 
 exit 0
+

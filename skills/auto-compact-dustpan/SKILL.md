@@ -42,3 +42,4 @@ The hook scripts live in `hooks/`:
 - **Unix / macOS:** `hooks/garry-dustpan.sh [Stop|PreCompact|PostCompact]`
 
 Ensure your harness configuration points to these hooks or invokes them during task lifecycle transitions.
+

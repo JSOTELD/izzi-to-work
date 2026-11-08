@@ -33,3 +33,4 @@ If a library must be considered, it must satisfy all 4 criteria:
 2. **Maintenance Health:** Actively maintained with releases in the last 6 months.
 3. **No Heavy Transitive Trees:** Inspect dependency count with `npm view <package> dependencies`.
 4. **License Compliance:** Permissive open-source license (MIT, Apache-2.0, BSD-3-Clause).
+

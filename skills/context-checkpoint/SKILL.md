@@ -77,3 +77,4 @@ When context window usage reaches capacity:
 3. **Execute Reset:** Run `/clear` to reset context to 0 tokens.
 4. **Instant Resume:** Instruct the clean agent:
    > *"Read `.claude/checkpoint.md` and execute the 'Exact Next Step'."*
+

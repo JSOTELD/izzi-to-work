@@ -60,3 +60,4 @@ Tools and capabilities adapt seamlessly to your active host environment:
 - **Hermes Agent:** Read [hermes-tools.md](file:///d:/xampp/htdocs/izzi-to-work/skills/using-izzi-to-work/references/hermes-tools.md).
 - **Muse:** Read [muse-tools.md](file:///d:/xampp/htdocs/izzi-to-work/skills/using-izzi-to-work/references/muse-tools.md).
 - **Pi:** Read [pi-tools.md](file:///d:/xampp/htdocs/izzi-to-work/skills/using-izzi-to-work/references/pi-tools.md).
+

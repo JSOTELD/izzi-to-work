@@ -38,3 +38,4 @@ For high-risk operations (account termination, manual balance adjustments, role 
 - Key performance metrics (revenue, active users, churn, open support tickets) presented with clean typography and delta indicators versus preceding periods.
 - Format currency with explicit currency symbols and banker's rounding.
 - Avoid resource-heavy charting libraries when lightweight SVG sparklines or tables suffice.
+

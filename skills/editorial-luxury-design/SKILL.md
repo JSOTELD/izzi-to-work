@@ -60,3 +60,4 @@ Never use harsh gray flashing pulses. Use gentle warm shimmering skeletons with 
 AI language models heavily overuse em-dashes (`—`), giving prose a synthetic, automated feel.
 - **Rule:** Eradicate all `—` characters from UI headings, marketing banners, button labels, and alert modals.
 - **Replacement:** Use natural editorial punctuation: colons, commas, periods, or clean whitespace.
+

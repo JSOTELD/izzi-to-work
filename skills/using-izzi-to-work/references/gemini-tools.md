@@ -8,3 +8,4 @@
 | Execute command | `run_command` |
 | Subagents | `invoke_subagent` |
 | Web search | `search_web` |
+

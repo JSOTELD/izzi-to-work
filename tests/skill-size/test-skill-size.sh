@@ -33,3 +33,4 @@ if ((failed)); then
   exit 1
 fi
 echo "PASS: all $count SKILL.md files are under $LIMIT bytes with valid frontmatter"
+

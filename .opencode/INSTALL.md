@@ -19,3 +19,4 @@ Or clone directly into your workspace plugins directory:
 ```bash
 git clone https://github.com/JSOTELD/izzi-to-work.git .opencode/plugins/izzi-to-work
 ```
+

@@ -50,3 +50,4 @@ SET statement_timeout = '30s';
 
 - Use timestamped migration prefixes (`YYYYMMDDHHMMSS_name.sql`) or monotonic integer numbering coordinated with `main`.
 - Verify no migrations have been committed to `main` with higher or conflicting timestamps before merging.
+

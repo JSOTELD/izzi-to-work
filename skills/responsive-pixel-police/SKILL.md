@@ -49,3 +49,4 @@ iOS Safari automatically zooms into the viewport when an `<input>` element has a
   ```html
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   ```
+

@@ -43,3 +43,4 @@ git diff --cached | grep -E -i \
 1. **Environment Variables:** Store all secrets in local `.env` files.
 2. **Git Ignore:** Ensure `.env`, `.env.local`, and `*.pem` are explicitly listed in `.gitignore`.
 3. **Template References:** Provide sanitized references in `.env.example` with placeholder values (`sk-ant-YOUR_API_KEY_HERE`).
+

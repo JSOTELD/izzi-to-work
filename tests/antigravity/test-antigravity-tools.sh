@@ -33,3 +33,4 @@ grep -q "antigravity-tools.md" "$SKILL" \
   || fail "SKILL.md Platform Adaptation does not reference antigravity-tools.md"
 
 echo "PASS: Antigravity tool mapping valid (subagent dispatch, task artifact, SKILL.md link)"
+
